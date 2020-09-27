@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up or Sign In</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div class="logo"> 
+		<img src="Picture2.png">
+	</div>
+	<header class="boxbg"></header>
+	<div class="loginbox">
+		<img src="img_avatar.png" class="avatar">
+		<h1>Login here</h1>
+		
+		<!-- Creating Log In Form -->
+
+		<form action="logincheck.php" method="POST">
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Please enter Username">
+			<p>Password</p>
+			<input type="password" name="pass" placeholder="Please enter Password">
+			<button>Login</button> <br>
+			<label><input type="checkbox" checked="checked" name=""> remember me</label><br>
+			<u style="color:#FF8C00"><a href="#">Forgot password?</a> <br>
+			<a href="form.html">Sign up</a></u>
+		</form>
+	</div>
+</body>
+</html>

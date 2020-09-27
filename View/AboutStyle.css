@@ -1,0 +1,25 @@
+body{
+	background-image: url(picture.jpg);
+	background-size: cover;
+}
+.w3-col h2{
+	position:absolute ;
+	top:5%;
+	left:45%;
+	float:center;
+	font-size:40px;
+	color:white;
+	
+}
+.w3-col h3{
+	
+	position:absolute;
+    top:20%;
+    color: white;
+}
+.w3-col p{
+	position:absolute;
+	top:20%;
+}
+
+

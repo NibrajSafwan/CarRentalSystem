@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<!-- telling the browser to set the width as per the device screen -->
+		<meta name="viewport" content="width=device-width,innitial-scale=1.0">
+		<meta name="Author" content="Shahriar, Istinub, Himadri, Iffat">
+		<title> Delete Account</title>
+		<style>
+			body{
+				background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("formbackground.jpg");
+				background-position: center;
+				background-attachment: fixed;
+				background-attachment: scroll;
+				background-repeat: repeat;
+
+			}
+			.form1{
+				background-color: rgba(242, 242, 242, 0.8);
+				width : 50%;
+				align-content: center;
+				margin-left: 300px;
+				margin-top: 40px;
+				border-radius: 10px;
+				color: black ;
+				font-family: "serif";
+				
+				
+				padding: 20px;
+
+
+			}
+
+			input[type=button], input[type=submit], input[type=reset] {
+  				background-color: #E53939;
+  				width:100%;
+  				border: none;
+  				color: white;
+  				padding: 16px 32px;
+  				text-decoration: none;
+  				margin: 4px 2px;
+  				cursor: pointer;
+  				border-radius: 5px;
+
+
+				}
+			input[type=text], input[type=Password], input[type=email]{
+ 				width: 100%;
+  				padding: 12px 20px;
+  				margin: 8px 0;
+  				display: inline-block;
+  				border: 1px solid #ccc;
+  				border-radius: 4px;
+  				box-sizing: border-box;
+			}
+
+			.hbackground{
+				font-size: 60px;
+				background-color: rgba(242, 242, 242, 0.8);;
+				text-align: center;
+				padding: 30px;
+
+			}
+			ul{
+				list-style-type: none; /* removes the bullets pf the list */
+				margin: 0;
+				padding: 0;
+				overflow: hidden;  /* hide the scroll bar of the top navigation */
+				background-color: rgba(255,255,255,0);
+				position: -webkit-sticky; /* for safari as it requires this prefix (safari is a web browser developed by Apple) */
+				position: sticky; /* stick the top navigation bar  */
+
+				top: 0;  /* sticky postition */
+
+			}
+			li{
+				float: right;  /*  navigation bar will float on right */
+			}
+			li a{
+				display: block;  /* will display in a block */
+				color: black;  /* font color black */
+				text-align: center; /*text alignment in the block*/
+				padding: 8px 25px; /*14 px for top and bottom padding... 16px for left and right padding */
+				text-decoration: none;
+				font-size: 20px;
+			}
+			li a:hover {
+				background-color: #E53939; 
+				border-radius: 5%;
+				color: white; /* font color when hover is generated */
+			}
+
+		</style>
+	</head>
+
+
+	
+	</head>
+	<body>
+		<!-- main header -->
+		
+		<h1 class="hbackground"> <img src="LOGO.png" height="50px" width="100px"> PSYDUCK CAR HIRE<ul class="topnav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="SignIn_SignUp.html">Log In</a></li>
+		</ul></h1>
+
+
+
+		
+
+
+
+		<h2 style="text-align: center;"> Mention Information to Delete an Account <h2>
+
+		<!-- Creating the form -->
+		<form class="form1" action="delete.php" method = "POST">
+			User ID: <input type="text" name="username" placeholder=" Your User ID..." required="required">
+			<br/>
+			<br/>
+			Password: <input type="Password" name="password" placeholder="your password" required="required">
+			<br/>
+			<br/>
+			
+			Email: <input type="email" name="email" placeholder="Your Email Address" required="required">
+			<br/>
+			<br/> 
+			
+			Phone Number: <input type="text" name="phone_number" placeholder="Your Current Phone Number" required="required">
+			<br/>
+			<br/>
+			
+			
+			<!-- creating the submit button -->
+			<input type="submit" value="Delete">
+		</form>
+	</body>
+</html>
+
